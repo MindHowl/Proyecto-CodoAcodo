@@ -1,173 +1,103 @@
+/* HEADER
+------------------------- */
 
+.navbar-brand img { max-width: 100px; }
 
+.bg-dark { background: #333a40!important; }
 
-header {
-  background: #202020;
-  width: 100%;
-  display: inline-block;
+.navbar-dark .navbar-nav .btn-compra-tickets { color: #25a342; }
+
+@media (min-width: 992px) {
+  .btn-compra-tickets {
+    border: 1px solid transparent;
+    border-radius: .8rem;
+  }
+  .btn-compra-tickets:hover,
+  .navbar-dark .navbar-nav .btn-compra-tickets.active {
+    background: #25a342;
+  }
 }
 
-header img {
-  width: 100px;
-}
+.pt-section { padding-top: 7rem; }
 
-header h1 {
-  font-size: large;
+/* ESTILOS TITULOS
+-------------------------------------------------- */
+
+.titulo-gral {
   text-align: center;
-  color: #fff !important;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
+.titulo-gral span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.2rem;
+} 
 
-header nav {
-  margin-top: 15px;
-}
+/* CAROUSEL
+-------------------------------------------------- */
 
-header li {
-  display: inline-block;
-}
+.bg-carousel-ba1 { background-image: url(./../Assets/images/ba1.jpg); }
+.bg-carousel-ba2 { background-image: url(./../Assets/images/ba2.jpg); }
+.bg-carousel-ba3 { background-image: url(./../Assets/images/ba3.jpg); }
 
-header a {
-  text-decoration: none;
-  padding: 10px;
-}
-
-header a:hover {
-  text-decoration: none;
-}
-
-
-#lead {
-  position: relative;
-  height: 100vh;
-  min-height: 500px;
-  max-height: 1080px;
-  background: url(./../Assets/images/ba1.jpg);
+.carousel-item {
   background-size: cover;
-  padding: 15px;
-  overflow: hidden;
+  background-position: center center;
+}
+.carousel-item svg { opacity: .5; }
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
 }
 
-#lead-container {
-  margin-top: 300px;
-  width: 700px;
-  float: right;
-  text-align: right !important;
-  align-content: right;
+.carousel-item {
+  height: 37rem;
+  min-height: 95vh;
 }
 
-#lead-container h2 {
+/* SECCION MITAD IMG, MITAD TEXTO
+-------------------------------------------------- */
+
+.bg-aside1 {
+  background: #333a40;
+  padding: 2rem;
+}
+
+/* FORMULARIO CONVIERTETE EN ORADOR
+-------------------------------------------------- */
+
+.btn-form {
+  background: #96c93e;
   color: #fff !important;
-  font-weight: 500;
-  font-size: 2.25em;
-  float: right;
-  text-align: right;
-  position: relative;
-  right: -480px;
+}
+.btn-form:hover { background: #74aa17; }
 
+/* FORM COMPRAR TICKETS
+-------------------------------------------------- */
+
+#totalPago {
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
-#lead-container p {
-  color: #fff !important;
-  margin-bottom: 15px;
-  float: right;
-  margin-right: 50px;
-  text-align: right;
-  font-weight: 590;
+/* FOOTER
+-------------------------------------------------- */
+
+#main-footer {
+  background: #1d3c4e;
+  color: #fff;
+  padding: 1.5rem;
 }
 
-#lead button {
-  position: relative;
-  float: right;
-  padding: auto;
-  margin: 10px;
-  right: -330px;
-}
-
-#button {
-  background: transparent;
-  border-color: #fff;
-}
-
-#lead-overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
-
-.heading {
+#main-footer .nav-link {
+  color: #fff;
   text-align: center;
-  position:relative;
-  height:auto;
-  width:400px;
-  margin:0px auto;
 }
+#main-footer .nav-link:hover { opacity: .7; }
 
-.heading h3{
-  position: relative;
-  margin:0px auto;
-  margin-top: 30px;
-  font-size: medium;
-}
-
-.heading h2{
-  margin:0px auto;
-}
-
-.espacio{
-  height: 30px;
-}
-
-.lista{
-  list-style: none;
-  padding: 0;
-  
-}
-
-.lista li{
-  display: inline-block;
-}
-
-
-#imggg{
-  padding: 0;
-}
-
-.imgg{
-  width: 100%;
-  height: 450px;
-}
-
-#Honolulu{
-  height: 450px;
-  width: 690px;
-  overflow: hidden;
-}
-#Honolulu h1{
-  margin-top: 25px;
-}
-
-#contact{
-  align-content: center;
-  margin:0px auto
-}
-#formulario{
-  margin-bottom: 15px;
-}
-
-footer ul{
-  list-style: none;
-  text-align: center;
-  position:relative;
-  height:auto;
-}
-footer li{
-  display: inline-block;
-  margin:0px auto;
-  padding: 25px;
+@media (min-width: 992px) {
+  #main-footer .nav-link span { display: block; }
 }
